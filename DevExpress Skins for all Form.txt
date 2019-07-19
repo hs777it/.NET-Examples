@@ -1,0 +1,24 @@
+	public XtraForm1()
+        {
+            InitializeComponent();
+            DevExpress.Skins.SkinManager.EnableFormSkins();
+            DevExpress.Skins.SkinManager.EnableMdiFormSkins();
+            DevExpress.LookAndFeel.LookAndFeelHelper.ForceDefaultLookAndFeelChanged();
+            // this.LookAndFeel.SetSkinStyle("Seven Classic");
+        }
+
+
+	XtraForm3 frm = new XtraForm3();
+            if ((Application.OpenForms["XtraForm3"] as XtraForm3) != null)
+            {
+                Application.OpenForms["XtraForm3"].Activate();
+                Application.OpenForms["XtraForm3"].WindowState = FormWindowState.Normal;
+            }
+            else
+            {
+                frm.LookAndFeel.UseDefaultLookAndFeel = false;
+                frm.LookAndFeel.SetSkinStyle(this.LookAndFeel.SkinName);
+                frm.MdiParent = this;
+                frm.Show();
+            }
+

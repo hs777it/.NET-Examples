@@ -1,0 +1,14 @@
+
+Open Extensions and Updates search for "rdlc report" and add:
+Microsoft RDLC Report Designer for the Visual Studio.
+Reporting Services Project.
+
+Open NuGet Package Manager search for Microsoft Report Viewer.
+
+OR
+
+For WebForms use:
+Install-Package Microsoft.ReportingServices.ReportViewerControl.WebForms
+
+For Windows Form use:
+Install-Package Microsoft.ReportingServices.ReportViewerControl.WinForms
